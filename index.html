@@ -14,6 +14,13 @@
     </header>
 
     <div class="container">
+        <div class="sort">
+            <label for="sort-select">Сортировка по дате:</label>
+            <select id="sort-select" onchange="sortNews()">
+                <option value="newest">Сначала новые</option>
+                <option value="oldest">Сначала старые</option>
+            </select>
+        </div>
         <div class="news-title">Последние новости 🌟</div>
         <div id="news-container"></div> <!-- Место для динамически генерируемых новостей -->
         <button id="load-more" onclick="loadMoreNews()">Загрузить больше новостей 📥</button>
