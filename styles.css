@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif; /* Основной шрифт */
+    line-height: 1.6; /* Высота строки */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем отступы */
+    background-color: #f4f4f4; /* Цвет фона */
+    color: #333; /* Цвет текста */
+}
+
+header {
+    background: #007BFF; /* Цвет фона шапки */
+    color: #fff; /* Цвет текста шапки */
+    padding: 20px; /* Отступы */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.container {
+    width: 80%; /* Ширина контейнера */
+    margin: 20px auto; /* Центрирование контейнера */
+    background: #fff; /* Цвет фона новостей */
+    padding: 20px; /* Отступы внутри контейнера */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+    border-radius: 8px; /* Закругленные углы */
+}
+
+.news-title {
+    font-size: 1.5em; /* Размер шрифта заголовка новостей */
+    margin-bottom: 20px; /* Отступ снизу */
+    text-align: center; /* Выравнивание по центру */
+}
+
+.news-item {
+    border-bottom: 1px solid #ccc; /* Разделитель между новостями */
+    padding: 15px 0; /* Отступы сверху и снизу */
+}
+
+.news-item h2 {
+    font-size: 1.3em; /* Размер шрифта заголовков новостей */
+    color: #007BFF; /* Цвет заголовков новостей */
+}
+
+.date {
+    font-size: 0.9em; /* Размер шрифта даты */
+    color: #888; /* Цвет текста даты */
+    margin-top: 5px; /* Отступ сверху */
+}
+
+button {
+    display: block; /* Отображение блока */
+    width: 100%; /* Ширина кнопки */
+    padding: 10px; /* Отступы внутри кнопки */
+    margin-top: 20px; /* Отступ сверху */
+    background: #007BFF; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Закругленные углы кнопки */
+    cursor: pointer; /* Указатель курсора при наведении */
+    font-size: 1em; /* Размер шрифта кнопки */
+}
+
+button:hover {
+    background: #0056b3; /* Цвет фона кнопки при наведении */
+}
+
+footer {
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 20px; /* Отступы */
+    background: #007BFF; /* Цвет фона футера */
+    color: #fff; /* Цвет текста футера */
+    position: relative; /* Относительное позиционирование */
+    bottom: 0; /* Прилегает к низу */
+    width: 100%; /* Ширина футера */
+    margin-top: 20px; /* Отступ сверху */
+}
