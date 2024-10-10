@@ -30,13 +30,26 @@ const news = [
 // Индекс для отслеживания загруженных новостей
 let newsIndex = 0;
 
+// Функция для преобразования строки с датой в корректный формат
+function parseDate(dateStr) {
+    const months = {
+        "января": "01", "февраля": "02", "марта": "03", "апреля": "04", 
+        "мая": "05", "июня": "06", "июля": "07", "августа": "08", 
+        "сентября": "09", "октября": "10", "ноября": "11", "декабря": "12"
+    };
+
+    let [day, month, year] = dateStr.split(' ');
+    month = months[month.toLowerCase()]; // Преобразование месяца в числовой формат
+    return new Date(`${year}-${month}-${day}`);
+}
+
 // Функция для сортировки новостей
 function sortNews() {
     const sortValue = document.getElementById('sort-select').value;
     if (sortValue === 'newest') {
-        news.sort((a, b) => new Date(b.date) - new Date(a.date));
+        news.sort((a, b) => parseDate(b.date) - parseDate(a.date));
     } else {
-        news.sort((a, b) => new Date(a.date) - new Date(b.date));
+        news.sort((a, b) => parseDate(a.date) - parseDate(b.date));
     }
     newsIndex = 0; // Сброс индекса
     document.getElementById('news-container').innerHTML = ''; // Очистка контейнера
